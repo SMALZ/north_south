@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <!-- width:可视区域的宽度，值可为数字或关键词device-width
+    height:同width
+    intial-scale:页面首次被显示是可视区域的缩放级别，取值1.0则页面按实际尺寸显示，无任何缩放
+    maximum-scale=1.0, minimum-scale=1.0;可视区域的缩放级别，
+             maximum-scale用户可将页面放大的程序，1.0将禁止用户放大到实际尺寸之上。
+    user-scalable:是否可对页面进行缩放，no 禁止缩放 -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Edge 模式通知 Windows Internet Explorer 以最高级别的可用模式显示内容 -->
+  <title>嘀嘀打车代驾南北对战</title>
+  <link rel="stylesheet" href="./common.css">
+</head>
+<body>
+  <div class="container">
+    <div class="wrap">
+      <div class="person background-type person-s animating"></div>
+      <div class="lightning background-type animating"></div>
+      <div class="person background-type person-n animating"></div>
+      <div class="main-text background-type animating"></div>
+      <div class="text background-type animating"></div>
+      <div class="btn-module">
+        <div class="btns">
+          <div class="btn">
+            <a href="" class="south-btn"></a>
+          </div>
+          <div class="btn">
+            <a href="" class="north-btn"></a>
+          </div>
+        </div>
+
+        <div class="act-desc">
+          <span class="J_actRules"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  ;(function(win) {   var w = document.body && document.body.clientWidth,f = w*48/360;
+    window.document.getElementsByTagName('html')[0].setAttribute('style', 'font-size:' + f + 'px;');   })(window);
+    // document.body.clientWidth确定浏览器窗口的尺寸,根据窗口大小来设置html的font-size,即为rem设置一个基准单位
+  </script>
+
+</body>
+</html>
